@@ -3,7 +3,7 @@ FROM golang:1.24 AS build
 WORKDIR /build
 
 COPY go.* .
-
+ENV GOPROXY=https://goproxy.cn/,direct
 RUN go mod download
 
 COPY . .
