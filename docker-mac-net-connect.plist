@@ -5,7 +5,7 @@
 	<key>KeepAlive</key>
 	<true/>
 	<key>Label</key>
-	<string>homebrew.mxcl.docker-mac-net-connect</string>
+	<string>docker-mac-net-connect</string>
 	<key>LimitLoadToSessionType</key>
 	<array>
 		<string>Aqua</string>
@@ -16,7 +16,7 @@
 	</array>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/opt/homebrew/opt/docker-mac-net-connect/bin/docker-mac-net-connect</string>
+		<string>/opt/homebrew/bin/docker-mac-net-connect</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

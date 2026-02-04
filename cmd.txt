@@ -1,8 +1,0 @@
-~/Library/LaunchAgents/homebrew.mxcl.docker-mac-net-connect.plist
-
-sudo brew services restart docker-mac-net-connect
-sudo brew services list
-cd /opt/homebrew/var/log/docker-mac-net-connect
-
-
-lsof -nP -iUDP:3333
