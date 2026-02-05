@@ -61,5 +61,5 @@ build-push-docker::
 test:
 	docker rm docker-mac-net-connect-nginx -f
 	docker run --name docker-mac-net-connect-nginx -d ccr.ccs.tencentyun.com/acejilam/ib-0y1tg9wj7e:dba37485fee3d4d76d5d82609cc9bccb-latest
-	curl `docker inspect docker-mac-net-connect-nginx|jq '.[0].NetworkSettings.Networks.bridge.IPAddress'|tr -d '"'`
+	curl `docker inspect docker-mac-net-connect-nginx|jq '.[0].NetworkSettings.IPAddress'|tr -d '"'`
 	docker rm docker-mac-net-connect-nginx -f
